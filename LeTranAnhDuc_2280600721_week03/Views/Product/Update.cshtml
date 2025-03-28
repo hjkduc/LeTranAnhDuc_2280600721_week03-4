@@ -30,7 +30,7 @@
     <div class="form-group">
         <label asp-for="ImageUrl">Product Image</label>
         <input type="file" asp-for="ImageUrl" class="form-control" id="imageInput" />
-        <img src="@Model.ImageUrl" alt="Product Image" style="max-width: 200px;" id="previewImage" />
+        <img src="@Model.ImageUrl" alt="Product Image" style="max-width: 200px;" id="previewImage" title="Preview of the selected image" />
     </div>
     <div class="form-group">
         <input type="submit" value="Save" class="btn btn-primary" />

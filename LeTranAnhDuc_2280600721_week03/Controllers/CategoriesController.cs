@@ -33,6 +33,7 @@ namespace LeTranAnhDuc_2280600721_week03.Controllers
             if (ModelState.IsValid)
             {
                 await _categoryRepository.AddAsync(category);
+                TempData["SuccessMessage"] = "Category added successfully!";
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
